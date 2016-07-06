@@ -4,17 +4,32 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>IrisLi&#39;s Blog</title>
+  <title>activemq几种基本的通信方式 | IrisLi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IrisLi's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="生产者和消费者
+
+生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
+
+p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="activemq几种基本的通信方式">
+<meta property="og:url" content="http://yoursite.com/2016/06/21/activemq的几种基本通信方式总结/index.html">
 <meta property="og:site_name" content="IrisLi's Blog">
-<meta property="og:description">
+<meta property="og:description" content="生产者和消费者
+
+生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
+
+p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：">
+<meta property="og:image" content="http://yoursite.com/img/1.jpeg">
+<meta property="og:image" content="http://yoursite.com/img/2.jpeg">
+<meta property="og:updated_time" content="2016-07-06T09:07:05.713Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IrisLi's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="activemq几种基本的通信方式">
+<meta name="twitter:description" content="生产者和消费者
+
+生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
+
+p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：">
   
   
     <link rel="icon" href="/favicon.png">
@@ -124,63 +139,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-DNS的入门学习" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/21/DNS的入门学习/" class="article-date">
-  	<time datetime="2016-06-21T09:11:47.000Z" itemprop="datePublished">2016-06-21</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/21/DNS的入门学习/">DNS的入门学习</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  最近看到一篇关于DNS的原理解析，自己感觉写的挺好的，记录和分享一下：</p>
-<p>  <a href="http://www.ruanyifeng.com/blog/2016/06/dns.html" title="DNS原理入门" target="_blank" rel="external">DNS 原理入门</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-activemq的几种基本通信方式总结" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-activemq的几种基本通信方式总结" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/06/21/activemq的几种基本通信方式总结/" class="article-date">
@@ -196,12 +155,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/21/activemq的几种基本通信方式总结/">activemq几种基本的通信方式</a>
+    <h1 class="article-title" itemprop="name">
+      activemq几种基本的通信方式
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -416,77 +382,28 @@ public void onMessage(Message message) {
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-领域架构模型的实现" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/17/领域架构模型的实现/" class="article-date">
-  	<time datetime="2016-03-17T09:23:33.000Z" itemprop="datePublished">2016-03-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+<nav id="article-nav">
+  
+    <a href="/2016/06/21/DNS的入门学习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
+          DNS的入门学习
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/17/领域架构模型的实现/">领域架构模型的实现</a>
-    </h1>
   
+    <a href="/2016/03/17/领域架构模型的实现/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">领域架构模型的实现</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>领域模型架构-多模块管理的实现</p>
-<p> 项目由以下多个模块来划分：</p>
-<pre><code>1.springBootTest项目：对多模块项目管理的项目
-2.main项目：spring boot 项目启动的项目
-3.domain项目：domain实体的定义和repository的定义
-4.persistening项目：应用spring data JPA来实现项目的持久化
-5.business项目：业务逻辑的实现
-6.webapi项目：restful接口的定义
-</code></pre><p> 该项目仅限于初步练习后续会慢慢完善的。<br> <a href="https://github.com/youzhizhen/springBootTest.git" title="github" target="_blank" rel="external">https://github.com/youzhizhen/springBootTest.git</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
@@ -495,11 +412,28 @@ public void onMessage(Message message) {
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="activemq的几种基本通信方式总结" data-title="activemq几种基本的通信方式" data-url="http://yoursite.com/2016/06/21/activemq的几种基本通信方式总结/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
-  
-  
+
 </div>
       <footer id="footer">
   <div class="outer">
@@ -523,8 +457,8 @@ public void onMessage(Message message) {
 		fancybox: true,
 		mathjax: true,
 		animate: undefined,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
