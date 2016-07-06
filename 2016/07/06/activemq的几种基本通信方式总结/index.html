@@ -19,8 +19,8 @@ p2p的过程则理解起来更加简单。它好比是两个人打电话，这�
 生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
 p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：我">
 <meta property="og:image" content="http://dl2.iteye.com/upload/attachment/0086/5406/847f46bb-3d45-3e6f-b663-05669360c5b1.jpg">
-<meta property="og:image" content="http://yoursite.com/img/2.jpg">
-<meta property="og:updated_time" content="2016-07-06T09:11:27.707Z">
+<meta property="og:image" content="http://dl2.iteye.com/upload/attachment/0086/5400/605c3d41-70af-3c3c-8f9d-0077a252964e.jpg">
+<meta property="og:updated_time" content="2016-07-06T09:13:00.315Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="activemq几种基本的通信方式">
 <meta name="twitter:description" content="生产者和消费者
@@ -257,7 +257,7 @@ public class Receiver {
     }
 }
 </code></pre><p>2.发布订阅模式（publish-subscribe）</p>
-<p>   发布订阅模式有点类似于我们日常生活中订阅报纸。每年到年尾的时候，邮局就会发一本报纸集合让我们来选择订阅哪一个。在这个表里头列了所有出版发行的报纸，那么对于我们每一个订阅者来说，我们可以选择一份或者多份报纸。比如北京日报、潇湘晨报等。那么这些个我们订阅的报纸，就相当于发布订阅模式里的topic。有很多个人订阅报纸，也有人可能和我订阅了相同的报纸。那么，在这里，相当于我们在同一个topic里注册了。对于一份报纸发行方来说，它和所有的订阅者就构成了一个1对多的关系。<br><img src="/img/2.jpg" alt=""></p>
+<p>   发布订阅模式有点类似于我们日常生活中订阅报纸。每年到年尾的时候，邮局就会发一本报纸集合让我们来选择订阅哪一个。在这个表里头列了所有出版发行的报纸，那么对于我们每一个订阅者来说，我们可以选择一份或者多份报纸。比如北京日报、潇湘晨报等。那么这些个我们订阅的报纸，就相当于发布订阅模式里的topic。有很多个人订阅报纸，也有人可能和我订阅了相同的报纸。那么，在这里，相当于我们在同一个topic里注册了。对于一份报纸发行方来说，它和所有的订阅者就构成了一个1对多的关系。<br><img src="http://dl2.iteye.com/upload/attachment/0086/5400/605c3d41-70af-3c3c-8f9d-0077a252964e.jpg" alt=""></p>
 <pre><code>public class Publisher {
 Connection connection = null;
 Session session;
