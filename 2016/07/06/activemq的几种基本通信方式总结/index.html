@@ -9,27 +9,24 @@
   <meta name="description" content="生产者和消费者
 
 生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
-
-p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：">
+p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：我">
 <meta property="og:type" content="article">
 <meta property="og:title" content="activemq几种基本的通信方式">
-<meta property="og:url" content="http://yoursite.com/2016/06/21/activemq的几种基本通信方式总结/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/07/06/activemq的几种基本通信方式总结/index.html">
 <meta property="og:site_name" content="IrisLi's Blog">
 <meta property="og:description" content="生产者和消费者
 
 生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
-
-p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：">
-<meta property="og:image" content="http://yoursite.com/img/1.jpeg">
-<meta property="og:image" content="http://yoursite.com/img/2.jpeg">
-<meta property="og:updated_time" content="2016-07-06T09:07:05.713Z">
+p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：我">
+<meta property="og:image" content="http://dl2.iteye.com/upload/attachment/0086/5406/847f46bb-3d45-3e6f-b663-05669360c5b1.jpg">
+<meta property="og:image" content="http://yoursite.com/img/2.jpg">
+<meta property="og:updated_time" content="2016-07-06T09:11:27.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="activemq几种基本的通信方式">
 <meta name="twitter:description" content="生产者和消费者
 
 生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
-
-p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：">
+p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：我">
   
   
     <link rel="icon" href="/favicon.png">
@@ -142,8 +139,8 @@ p2p的过程则理解起来更加简单。它好比是两个人打电话，这�
       <div class="body-wrap"><article id="post-activemq的几种基本通信方式总结" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/06/21/activemq的几种基本通信方式总结/" class="article-date">
-  	<time datetime="2016-06-21T09:11:47.000Z" itemprop="datePublished">2016-06-21</time>
+      <a href="/2016/07/06/activemq的几种基本通信方式总结/" class="article-date">
+  	<time datetime="2016-07-06T09:09:11.000Z" itemprop="datePublished">2016-07-06</time>
 </a>
     </div>
   
@@ -175,13 +172,8 @@ p2p的过程则理解起来更加简单。它好比是两个人打电话，这�
         <ol>
 <li>生产者和消费者</li>
 </ol>
-<pre><code>生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
-
-p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：
-
-我们再来看看一个p2p的示例：
-在p2p的场景里，相互通信的双方是通过一个类似于队列的方式来进行交流。在p2p里一个queue只有一个发送者和一个接收者。
-</code></pre><p><img src="/img/1.jpeg" alt=""></p>
+<p>生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。</p>
+<p>p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：<br>我们再来看看一个p2p的示例：在p2p的场景里，相互通信的双方是通过一个类似于队列的方式来进行交流。在p2p里一个queue只有一个发送者和一个接收者。<br>    <img src="http://dl2.iteye.com/upload/attachment/0086/5406/847f46bb-3d45-3e6f-b663-05669360c5b1.jpg" alt=""></p>
 <pre><code>public class Sender {
 private static final int SEND_NUMBER = 5;
 public static void main(String[] args) {
@@ -265,7 +257,7 @@ public class Receiver {
     }
 }
 </code></pre><p>2.发布订阅模式（publish-subscribe）</p>
-<p>   发布订阅模式有点类似于我们日常生活中订阅报纸。每年到年尾的时候，邮局就会发一本报纸集合让我们来选择订阅哪一个。在这个表里头列了所有出版发行的报纸，那么对于我们每一个订阅者来说，我们可以选择一份或者多份报纸。比如北京日报、潇湘晨报等。那么这些个我们订阅的报纸，就相当于发布订阅模式里的topic。有很多个人订阅报纸，也有人可能和我订阅了相同的报纸。那么，在这里，相当于我们在同一个topic里注册了。对于一份报纸发行方来说，它和所有的订阅者就构成了一个1对多的关系。<br><img src="/img/2.jpeg" alt=""></p>
+<p>   发布订阅模式有点类似于我们日常生活中订阅报纸。每年到年尾的时候，邮局就会发一本报纸集合让我们来选择订阅哪一个。在这个表里头列了所有出版发行的报纸，那么对于我们每一个订阅者来说，我们可以选择一份或者多份报纸。比如北京日报、潇湘晨报等。那么这些个我们订阅的报纸，就相当于发布订阅模式里的topic。有很多个人订阅报纸，也有人可能和我订阅了相同的报纸。那么，在这里，相当于我们在同一个topic里注册了。对于一份报纸发行方来说，它和所有的订阅者就构成了一个1对多的关系。<br><img src="/img/2.jpg" alt=""></p>
 <pre><code>public class Publisher {
 Connection connection = null;
 Session session;
@@ -387,18 +379,9 @@ public void onMessage(Message message) {
     
 <nav id="article-nav">
   
-    <a href="/2016/06/21/DNS的入门学习/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          DNS的入门学习
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/03/17/领域架构模型的实现/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">领域架构模型的实现</div>
+    <a href="/2016/06/21/DNS的入门学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">DNS的入门学习</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -414,7 +397,7 @@ public void onMessage(Message message) {
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="activemq的几种基本通信方式总结" data-title="activemq几种基本的通信方式" data-url="http://yoursite.com/2016/06/21/activemq的几种基本通信方式总结/"></div>
+	<div class="ds-thread" data-thread-key="activemq的几种基本通信方式总结" data-title="activemq几种基本的通信方式" data-url="http://yoursite.com/2016/07/06/activemq的几种基本通信方式总结/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

@@ -126,65 +126,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-DNS的入门学习" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/21/DNS的入门学习/" class="article-date">
-  	<time datetime="2016-06-21T09:11:47.000Z" itemprop="datePublished">2016-06-21</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/21/DNS的入门学习/">DNS的入门学习</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  最近看到一篇关于DNS的原理解析，自己感觉写的挺好的，记录和分享一下：</p>
-<p>  <a href="http://www.ruanyifeng.com/blog/2016/06/dns.html" title="DNS原理入门" target="_blank" rel="external">DNS 原理入门</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
     <article id="post-activemq的几种基本通信方式总结" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/06/21/activemq的几种基本通信方式总结/" class="article-date">
-  	<time datetime="2016-06-21T09:11:47.000Z" itemprop="datePublished">2016-06-21</time>
+      <a href="/2016/07/06/activemq的几种基本通信方式总结/" class="article-date">
+  	<time datetime="2016-07-06T09:09:11.000Z" itemprop="datePublished">2016-07-06</time>
 </a>
     </div>
   
@@ -197,7 +143,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/21/activemq的几种基本通信方式总结/">activemq几种基本的通信方式</a>
+      <a class="article-title" href="/2016/07/06/activemq的几种基本通信方式总结/">activemq几种基本的通信方式</a>
     </h1>
   
 
@@ -209,13 +155,8 @@
         <ol>
 <li>生产者和消费者</li>
 </ol>
-<pre><code>生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。
-
-p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：
-
-我们再来看看一个p2p的示例：
-在p2p的场景里，相互通信的双方是通过一个类似于队列的方式来进行交流。在p2p里一个queue只有一个发送者和一个接收者。
-</code></pre><p><img src="/img/1.jpeg" alt=""></p>
+<p>生产者和消费者模式（P2P）模式：一个生产者生产的消息只能被一个消费者消费，一旦有消费者消费就不存在。一般用Queue来实现，生产者把消息发送到Queue中然后消费中从中取出来消费。</p>
+<p>p2p的过程则理解起来更加简单。它好比是两个人打电话，这两个人是独享这一条通信链路的。一方发送消息，另外一方接收，就这么简单。在实际应用中因为有多个用户对使用p2p的链路，它的通信场景如下图所示：<br>我们再来看看一个p2p的示例：在p2p的场景里，相互通信的双方是通过一个类似于队列的方式来进行交流。在p2p里一个queue只有一个发送者和一个接收者。<br>    <img src="http://dl2.iteye.com/upload/attachment/0086/5406/847f46bb-3d45-3e6f-b663-05669360c5b1.jpg" alt=""></p>
 <pre><code>public class Sender {
 private static final int SEND_NUMBER = 5;
 public static void main(String[] args) {
@@ -299,7 +240,7 @@ public class Receiver {
     }
 }
 </code></pre><p>2.发布订阅模式（publish-subscribe）</p>
-<p>   发布订阅模式有点类似于我们日常生活中订阅报纸。每年到年尾的时候，邮局就会发一本报纸集合让我们来选择订阅哪一个。在这个表里头列了所有出版发行的报纸，那么对于我们每一个订阅者来说，我们可以选择一份或者多份报纸。比如北京日报、潇湘晨报等。那么这些个我们订阅的报纸，就相当于发布订阅模式里的topic。有很多个人订阅报纸，也有人可能和我订阅了相同的报纸。那么，在这里，相当于我们在同一个topic里注册了。对于一份报纸发行方来说，它和所有的订阅者就构成了一个1对多的关系。<br><img src="/img/2.jpeg" alt=""></p>
+<p>   发布订阅模式有点类似于我们日常生活中订阅报纸。每年到年尾的时候，邮局就会发一本报纸集合让我们来选择订阅哪一个。在这个表里头列了所有出版发行的报纸，那么对于我们每一个订阅者来说，我们可以选择一份或者多份报纸。比如北京日报、潇湘晨报等。那么这些个我们订阅的报纸，就相当于发布订阅模式里的topic。有很多个人订阅报纸，也有人可能和我订阅了相同的报纸。那么，在这里，相当于我们在同一个topic里注册了。对于一份报纸发行方来说，它和所有的订阅者就构成了一个1对多的关系。<br><img src="/img/2.jpg" alt=""></p>
 <pre><code>public class Publisher {
 Connection connection = null;
 Session session;
@@ -412,6 +353,60 @@ public void onMessage(Message message) {
     }
 }
 </code></pre><p>参考资料：<a href="http://shmilyaw-hotmail-com.iteye.com/blog/1897635" title="参考资料" target="_blank" rel="external">http://shmilyaw-hotmail-com.iteye.com/blog/1897635</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-DNS的入门学习" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/21/DNS的入门学习/" class="article-date">
+  	<time datetime="2016-06-21T09:11:47.000Z" itemprop="datePublished">2016-06-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/21/DNS的入门学习/">DNS的入门学习</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  最近看到一篇关于DNS的原理解析，自己感觉写的挺好的，记录和分享一下：</p>
+<p>  <a href="http://www.ruanyifeng.com/blog/2016/06/dns.html" title="DNS原理入门" target="_blank" rel="external">DNS 原理入门</a></p>
 
       
     </div>
